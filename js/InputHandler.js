@@ -145,6 +145,9 @@ class InputHandler {
             case 'v': 
                 this.game.toggleVents(); 
                 break;
+            case 'c':
+                this.game.camera.restartCamera();
+                break;
             case ' ': 
                 e.preventDefault();
                 this.game.toggleCamera();
